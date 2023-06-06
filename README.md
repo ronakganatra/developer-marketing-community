@@ -1,6 +1,6 @@
 ![DMC](https://gfycat.com/ConfusedGracefulArgentinehornedfrog.gif)
 
-We're a crew of 600+ passionate marketing folks working in API Marketing, developer tooling, or actively marketing to developers.
+We're a crew of 700+ passionate marketing folks working in API Marketing, developer tooling, or actively marketing to developers.
 
 Jamstack, enterprise SaaS, headless, APIs, whatever your jam, come say hi!
 
