@@ -1,6 +1,7 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon";
+import Sectionhead from "@components/sectionhead.astro";
 
 const features = [
   {
@@ -42,25 +43,16 @@ const features = [
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Be a better developer marketer
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Join some truly amazing people active in marketing APIs and developer tools.
-  </p>
-  <p class="text-lg mt-4 text-slate-600">
-    We're all about sharing, asking, and supporting one another to level up our dev marketing chops.
-  </p>
-</div>
+<Sectionhead>
+  <Fragment slot="title">Be a better developer marketer</Fragment>
+  <Fragment slot="desc">We're all about sharing, asking, and supporting one another to level up our dev marketing chops.</Fragment>
+</Sectionhead>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 pt-8 pb-8">  
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
+        
         <div>
           <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
