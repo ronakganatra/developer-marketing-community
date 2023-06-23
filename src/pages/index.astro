@@ -20,6 +20,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Layout title="">
   <Container>
     <Hero />
+     <Logos />
     <Features />
     <Sectionhead>
       <Fragment slot="title">You're in good company</Fragment>
@@ -58,7 +59,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         ))
       }
     </div>
-    <Logos />
     <Cta />
   </Container>
 </Layout>

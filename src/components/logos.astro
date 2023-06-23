@@ -1,23 +1,29 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon";
+import Sectionhead from "@components/sectionhead.astro";
+
 ---
 
-<div class="mt-24 gap-16">
-  <h2 class="text-center text-slate-500">Buzzing with inputs from 750+ of the best marketers at developer centric companies</h2>
-  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-center mt-12 flex-wrap">
+<Sectionhead>
+  <Fragment slot="title">750+ of the best dev marketers</Fragment>
+  <Fragment slot="desc">Buzzing with inputs from 750+ of the best marketers at developer centric companies</Fragment>
+</Sectionhead>
+
+<div class="mt-24 gap-16 pb-8">
+  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-left mt-12 flex-wrap">
     <Icon class="h-8 md:h-12" name="simple-icons:github" />
     <Icon class="h-8 md:h-12" name="simple-icons:microsoft" />
     <Icon class="h-8 md:h-14" name="simple-icons:supabase" />
     <Icon class="h-8 md:h-16" name="simple-icons:docker" />
     <Icon class="h-8 md:h-12" name="simple-icons:sentry" />
     <Icon class="h-8 md:h-12" name="simple-icons:algolia" />
-    <Icon class="h-8 md:h-12" name="simple-icons:strapi" />
+    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
     <Icon class="h-8 md:h-12" name="simple-icons:elastic" />
     <Icon class="h-8 md:h-14" name="simple-icons:hashnode" />
-    <Icon class="h-8 md:h-16" name="simple-icons:vercel" />
+    <Icon class="h-8 md:h-16" name="simple-icons:nginx" />
     <Icon class="h-8 md:h-12" name="simple-icons:prisma" />
-    <Icon class="h-8 md:h-12" name="simple-icons:slack" />
+    <Icon class="h-8 md:h-12" name="simple-icons:snyk" />
     <Icon class="h-8 md:h-12" name="simple-icons:hasura" />
     <Icon class="h-8 md:h-12" name="simple-icons:snowflake" />
   </div> 
