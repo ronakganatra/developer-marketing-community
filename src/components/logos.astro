@@ -2,16 +2,22 @@
 // @ts-ignore
 import { Icon } from "astro-icon";
 import Sectionhead from "@components/sectionhead.astro";
+import { getCollection } from "astro:content";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
 
 ---
 
 <Sectionhead>
-  <Fragment slot="title">750+ of the best dev marketers</Fragment>
-  <Fragment slot="desc">Buzzing with inputs from 750+ of the best marketers at developer centric companies</Fragment>
+  <Fragment slot="title">You're in good company!</Fragment>
+  <Fragment slot="desc">Engage with dev marketers from 500+ companies from startups to the enterprise.</Fragment>
 </Sectionhead>
 
-<div class="mt-24 gap-16 pb-8">
-  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-left mt-12 flex-wrap">
+<div class="mt-12 gap-16 pb-8">
+  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-center mt-12 flex-wrap">
     <Icon class="h-8 md:h-12" name="simple-icons:github" />
     <Icon class="h-8 md:h-12" name="simple-icons:microsoft" />
     <Icon class="h-8 md:h-14" name="simple-icons:supabase" />

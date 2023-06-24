@@ -1,13 +1,12 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon";
 import Sectionhead from "@components/sectionhead.astro";
 
 const features = [
   {
     title: "Developer marketing only",
     description:
-      "From API-first companies like Algolia, PostHog, and Elastic, we're a bunch of marketers actively discussing API marketing topics. No eCommerce, no Fintech, no noise.",
+      "From companies like Algolia, PostHog, and Kong, we're actively discussing relevant API marketing topics. No fluff. No noise.",
     icon: "bx:bxs-check-circle",
   },
   {
@@ -19,36 +18,36 @@ const features = [
   {
     title: "Actionable experiences",
     description:
-      "With expertise covering SEO, CRM, Automation, PMM, Strategy, GTM, and everything in between, there's always someone willing to share their experiences.",
+      "With expertise in SEO, CRM, PMM, GTM, and everything in between, there's always someone willing to share their insights.",
     icon: "bx:bxs-check-circle",
   },
   {
     title: "#ask-anything",
     description:
-      "Our most active channel is for anyone to address their most pressing questions. ProductHunt launch? Email marketing to devs? Speak with someone who's been there!",
+      "Our most active channel is to address pressing questions. ProductHunt? Emails? Ads? SEO? Speak with people doing similar things in the space.",
     icon: "bx:bxs-check-circle",
   },
   {
     title: "#share-anything",
     description:
-      "We're all for a spam-free space to share knowledge, resources, and ideas. Our community has an incredible wealth of resources for anyone to learn from and engage with.",
+      "We're all for a spam-free space to share knowledge, resources, and ideas. Interact with an incredible wealth of resources to learn from and engage with.",
     icon: "bx:bxs-check-circle",
   },
   {
     title: "#jobs",
     description:
-      "Dev marketing is quite the niche, and it isn't always easy to transfer skills in and out of the space. With 750+ dev marketers, there's always great API companies to check out.",
+      "Whether you're looking for something new, or want to share openings on your team, reach out to people in 500+ companies operating in the same niche!",
     icon: "bx:bxs-check-circle",
   },
 ];
 ---
 
 <Sectionhead>
-  <Fragment slot="title">Be a better developer marketer</Fragment>
+  <Fragment slot="title">Be a better developer marketer.</Fragment>
   <Fragment slot="desc">We're all about sharing, asking, and supporting one another to level up our dev marketing chops.</Fragment>
 </Sectionhead>
 
-<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 pt-8 pb-8">  
+<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 pt-0 pb-12">  
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
