@@ -1,0 +1,15 @@
+---
+const { align = "center" } = Astro.props;
+---
+
+<div class:list={["grid md:grid-cols-1 mx-auto max-w-4xl mt-16", align === "left" && "text-left"]}>
+  <h3 class="text-2xl lg:text-3xl font-bold lg:tracking-tight">
+  <slot name="quote">H3</slot>
+  </h3>
+  <p class="text-lg mt-4 text-slate-600">
+    <slot name="name">Some description goes here</slot>
+  </p>
+  <p class="text-lg mt-0 text-slate-600">
+    <slot name="title">Some description goes here</slot>
+  </p>
+</div>

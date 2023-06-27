@@ -19,7 +19,7 @@ const { title } = Astro.props;
 
 const makeTitle = title
   ? title + " | " + "Developer Marketing Community"
-  : "Developer Marketing Community - 700+ API marketing experts on Slack";
+  : "Developer Marketing Community - 750+ API marketing experts on Slack";
 ---
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Slack community with 700+ experts in developer marketing, developer tooling, and APIs"
+      description="Slack community with 750+ experts in developer marketing, developer tooling, and APIs"
       canonical={canonicalURL}
       twitter={{
         creator: "@gunnyganatra",
@@ -59,8 +59,6 @@ const makeTitle = title
     <slot />
     <Footer />
     <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
       }

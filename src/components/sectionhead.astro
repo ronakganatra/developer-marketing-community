@@ -2,7 +2,7 @@
 const { align = "center" } = Astro.props;
 ---
 
-<div class:list={["mt-16", align === "center" && "text-center"]}>
+<div class:list={["grid md:grid-cols-1 mx-auto max-w-4xl mt-16", align === "left" && "text-left"]}>
   <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     <slot name="title">Title</slot>
   </h1>

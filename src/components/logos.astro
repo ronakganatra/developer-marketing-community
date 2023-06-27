@@ -1,24 +1,36 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon";
+import Sectionhead from "@components/sectionhead.astro";
+import { getCollection } from "astro:content";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
 ---
 
-<div class="mt-24 gap-16">
-  <h2 class="text-center text-slate-500">Buzzing with inputs from 700+ of the best marketers at developer centric companies</h2>
-  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+<Sectionhead>
+  <Fragment slot="title">You're in good company!</Fragment>
+  <Fragment slot="desc">Join dev marketers from 500+ companies, sharing their experiences from startups to the enterprise.</Fragment>
+</Sectionhead>
+
+<div class="mt-12 gap-16 pb-8">
+  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-center mt-12 flex-wrap">
     <Icon class="h-8 md:h-12" name="simple-icons:github" />
     <Icon class="h-8 md:h-12" name="simple-icons:microsoft" />
     <Icon class="h-8 md:h-14" name="simple-icons:supabase" />
     <Icon class="h-8 md:h-16" name="simple-icons:docker" />
     <Icon class="h-8 md:h-12" name="simple-icons:sentry" />
     <Icon class="h-8 md:h-12" name="simple-icons:algolia" />
-  </div>
-<div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <Icon class="h-8 md:h-12" name="simple-icons:strapi" />
+    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
     <Icon class="h-8 md:h-12" name="simple-icons:elastic" />
     <Icon class="h-8 md:h-14" name="simple-icons:hashnode" />
-    <Icon class="h-8 md:h-16" name="simple-icons:vercel" />
+    <Icon class="h-8 md:h-16" name="simple-icons:nginx" />
     <Icon class="h-8 md:h-12" name="simple-icons:prisma" />
-    <Icon class="h-8 md:h-12" name="simple-icons:slack" />
-  </div>
+    <Icon class="h-8 md:h-12" name="simple-icons:snyk" />
+    <Icon class="h-8 md:h-12" name="simple-icons:hasura" />
+    <Icon class="h-8 md:h-12" name="simple-icons:snowflake" />
+  </div> 
 </div>

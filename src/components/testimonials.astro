@@ -1,0 +1,63 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+import Sectionhead from "@components/sectionhead.astro";
+import Quote from "@components/quote.astro";
+import { Picture } from "@astrojs/image/components";
+import Link from "@components/ui/link.astro";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+---
+
+<Sectionhead>
+  <Fragment slot="title">Dev Marketing. Community Powered.</Fragment>
+  <Fragment slot="desc">Incredible people coming together to discuss marketing APIs and developer tools. No fluff.</Fragment>
+</Sectionhead>
+
+<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 pb-12">
+  {
+    publishedTeamMembers.map((teamMemberEntry) => (
+      <div class="group">
+
+        <div class="mt-4 text-left">
+          <h2 class="text-lg font-bold text-gray-800 pt-">
+            "{teamMemberEntry.data.quote}"
+          </h2>
+
+          <div class="pt-4">
+          <Picture
+            src={teamMemberEntry.data.avatar.src}
+            alt={teamMemberEntry.data.avatar.alt}
+            sizes="(max-width: 30px) 6vw, 60px"
+            widths={[200, 400]}
+            aspectRatio="1:1"
+            background="#ffffff"
+            fit="cover"
+            position="left"
+            class="rounded-full rounded transition group-hover:shadow-m"
+          />
+        </div>
+
+          <a href={teamMemberEntry.data.socialUrl} target="_blank">
+            <h3 class="text-sm font-semibold text-slate-700 pt-2"> 
+              {teamMemberEntry.data.name}
+            </h3>
+          </a>
+
+
+          <a href={teamMemberEntry.data.companyUrl} target="_blank">
+            <h3 class="text-sm text-slate-700 pt-1">
+              {teamMemberEntry.data.title}
+            </h3>
+          </a>
+        </div>
+      </div>
+    ))
+  }
+</div>
