@@ -23,6 +23,8 @@ const teamCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
     name: z.string(),
+    socialUrl: z.string(),
+    companyUrl: z.string(),
     quote: z.string(),
     title: z.string(),
     avatar: z.object({
