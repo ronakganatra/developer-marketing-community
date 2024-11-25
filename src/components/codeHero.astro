@@ -1,29 +1,17 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/ballmer.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
 <main
   class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-12 pt-8">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Ballmer Developers"
-      widths={[100, 200, 300]}
-      sizes="(max-width: 256px) 100vw, 400px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Developers! Developers! Developers!
+      Code of Conduct
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Join 2K+ passionate marketers working in API marketing, developer tooling, or actively marketing to developers.
+      Simple guidelines, recommendations, and expectations between everyone in the Developer Marketing Community
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -45,17 +33,6 @@ import { Icon } from "astro-icon";
         <Icon class="text-black w-4 h-4" name="bx:bxl-slack" />
         Log in
       </Link>
-    </div>
-    <div>
-      <p class="text-base text-slate-500 mt-6">
-        <a
-          href="/code"
-          target="_blank"
-          rel="noopener"
-          class="hover:underline">
-          Code of Conduct →
-        </a>
-      </p>
     </div>
   </div>
 </main>
