@@ -1,5 +1,4 @@
 ---
-// @ts-ignore
 import Sectionhead from "@components/sectionhead.astro";
 
 const features = [
@@ -7,19 +6,16 @@ const features = [
     title: "Developer marketing only",
     description:
       "From companies like Algolia, PostHog, and Kong, we're actively discussing relevant API marketing topics. No fluff. No noise.",
-    icon: "bx:bxs-check-circle",
   },
   {
     title: "Globally distributed",
     description:
       "With members spread across from the West Coast to New Zealand, there's always someone in your time zone to chat with.",
-    icon: "bx:bxs-check-circle",
   },
   {
     title: "Actionable experiences",
     description:
       "With expertise in SEO, CRM, PMM, GTM, and everything in between, there's always someone willing to share their insights.",
-    icon: "bx:bxs-check-circle",
   },
 ];
 ---
@@ -35,7 +31,7 @@ const features = [
       <div class="flex gap-4 items-start">
         
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg">{item.title}</h3>
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>

@@ -19,7 +19,7 @@ const { title } = Astro.props;
 
 const makeTitle = title
   ? title + " | " + "Developer Marketing Community"
-  : "Developer Marketing Community - 2K+ API marketing experts on Slack";
+  : "Developer Marketing Community - 2.5K+ API marketing experts on Slack";
 ---
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ const makeTitle = title
 
     <SEO
       title={makeTitle}
-      description="Slack community with 2K+ experts in developer marketing, developer tooling, and APIs"
+      description="Slack community with 2.5K+ experts in developer marketing, developer tooling, and APIs"
       canonical={canonicalURL}
       twitter={{
         creator: "@gunnyganatra",
@@ -52,6 +52,21 @@ const makeTitle = title
         },
       }}
     />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Developer Marketing Community",
+      "url": "https://marketingto.dev",
+      "description": "Slack community with 2,000+ experts in developer marketing, developer tooling, and APIs",
+      "sameAs": [
+        "https://twitter.com/gunnyganatra",
+        "https://twitter.com/jczakon",
+        "https://twitter.com/fmerian",
+        "https://www.linkedin.com/in/ophirprusak",
+        "https://devmarketingcommunity.slack.com"
+      ]
+    })} />
   </head>
   <body>
     <Navbar />

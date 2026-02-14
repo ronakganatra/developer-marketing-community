@@ -1,11 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
 import Sectionhead from "@components/sectionhead.astro";
-import { getCollection } from "astro:content";
-
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
 ---
 
 <Sectionhead>
@@ -13,21 +8,21 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Fragment slot="desc">Join founders and marketing peers from awesome dev-first companies to share insights and best practices.</Fragment>
 </Sectionhead>
 
-<div class="mt-12 gap-16 pb-8">
-  <div class="mx-auto max-w-4xl flex gap-8 md:gap-20 items-center justify-center mt-12 flex-wrap">
-    <Icon class="h-8 md:h-12" name="simple-icons:github" />
-    <Icon class="h-8 md:h-12" name="simple-icons:microsoft" />
-    <Icon class="h-8 md:h-14" name="simple-icons:supabase" />
-    <Icon class="h-8 md:h-16" name="simple-icons:docker" />
-    <Icon class="h-8 md:h-12" name="simple-icons:sentry" />
-    <Icon class="h-8 md:h-12" name="simple-icons:algolia" />
-    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
-    <Icon class="h-8 md:h-12" name="simple-icons:elastic" />
-    <Icon class="h-8 md:h-14" name="simple-icons:hashnode" />
-    <Icon class="h-8 md:h-16" name="simple-icons:nginx" />
-    <Icon class="h-8 md:h-12" name="simple-icons:prisma" />
-    <Icon class="h-8 md:h-12" name="simple-icons:snyk" />
-    <Icon class="h-8 md:h-12" name="simple-icons:hasura" />
-    <Icon class="h-8 md:h-12" name="simple-icons:snowflake" />
+<div class="mt-12 pb-8">
+  <div class="mx-auto max-w-4xl grid grid-cols-4 md:grid-cols-7 gap-8 md:gap-10 place-items-center mt-12">
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:github" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:microsoft" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:supabase" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:docker" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:sentry" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:algolia" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:vercel" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:elastic" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:hashnode" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:nginx" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:prisma" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:snyk" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:hasura" />
+    <Icon class="w-10 h-10 md:w-16 md:h-16" name="simple-icons:snowflake" />
   </div>
 </div>

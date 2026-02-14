@@ -1,0 +1,49 @@
+# Developer Marketing Community
+
+> The largest Slack community for developer marketing professionals.
+
+Website: https://marketingto.dev
+Join: https://marketingto.dev/#join
+Login: https://devmarketingcommunity.slack.com
+Code of Conduct: https://marketingto.dev/code
+
+## About
+
+The Developer Marketing Community is a Slack-based community of 2,000+ professionals focused on marketing APIs, developer tools, and developer-first products. Members include founders, marketers, and growth leaders from companies like GitHub, Microsoft, Supabase, Docker, Sentry, Algolia, Vercel, Elastic, Hashnode, Nginx, Prisma, Snyk, Hasura, Snowflake, PostHog, and Kong.
+
+## Why Join
+
+- **Developer marketing only**: Actively discussing relevant API marketing topics. No fluff. No noise.
+- **Globally distributed**: Members from the West Coast to New Zealand — there's always someone in your time zone.
+- **Actionable experiences**: Expertise in SEO, CRM, PMM, GTM, and everything in between.
+
+## Slack Channels
+
+- **#ask-anything**: The most active channel for pressing questions — Product Hunt, emails, ads, SEO, and more. Speak with people doing similar things in the space.
+- **#share-anything**: A spam-free space to share knowledge, resources, and ideas. An incredible wealth of resources to learn from and engage with.
+- **#raise-capital**: Engage with founders, investors, and GTM experts in developer tooling to join you on building your startup.
+- **#jobs**: Whether you're looking for something new or want to share openings on your team, reach out to people in the same niche.
+- **#watercooler-chat**: For anything that doesn't fit the other channels, or just to shoot the breeze.
+
+## Co-Founders
+
+- Ronak Ganatra — https://twitter.com/gunnyganatra
+- Jakub Czakon — https://twitter.com/jczakon
+- Flo Merian — https://twitter.com/fmerian
+- Ophir Prusak — https://www.linkedin.com/in/ophirprusak
+
+## Testimonials
+
+- "The only Slack where I actually learn stuff!" — Martin Perreau, CEO & Co-Founder @ Munity
+- "Really excited to be a part of this community!" — Taylor Page, Director of Growth Marketing @ Kong
+- "Been here 20 min and already folks are sharing great advice." — Charles Cook, VP Marketing & Ops @ Posthog
+- "Looks like THE place to be. Glad I found out about this." — Heather Simpson, Marketing @ Pangea
+- "Probably the best community I've ever been in." — Morgan Perry, Co-Founder @ Qovery
+- "More value than almost any other Slack community." — Zevi Reinitz, Product Marketing @ Livecycle
+- "Absolutely love this vibrant and supportive community!" — Sagar Kava, Co-founder @ VideoSDK
+- "An essential community for anyone in devtools." — Jack Bridger, Host @ Scaling DevTools
+- "Fantastic community with actionable insights." — Praveen Koka, VP Engineering @ ROQ.ai
+
+## Companies Represented
+
+GitHub, Microsoft, Supabase, Docker, Sentry, Algolia, Vercel, Elastic, Hashnode, Nginx, Prisma, Snyk, Hasura, Snowflake, PostHog, Kong, Qovery, Pangea, Livecycle, VideoSDK, and many more.
