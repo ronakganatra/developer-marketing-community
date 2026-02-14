@@ -20,21 +20,22 @@ const features = [
 ];
 ---
 
-<Sectionhead>
-  <Fragment slot="title">Be a smarter developer marketer.</Fragment>
-  <Fragment slot="desc">We're all about sharing, asking, and supporting one another to level up our dev marketing chops.</Fragment>
-</Sectionhead>
+<section class="bg-gray-50 py-20">
+  <div class="max-w-4xl mx-auto px-5">
+    <Sectionhead>
+      <Fragment slot="title">Be a smarter developer marketer.</Fragment>
+      <Fragment slot="desc">We're all about sharing, asking, and supporting one another to level up our dev marketing chops.</Fragment>
+    </Sectionhead>
 
-<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 pt-0 pb-12">  
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>
+    <div class="grid md:grid-cols-3 gap-5 mt-12">
+      {
+        features.map((item) => (
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-gray-200 transition-all duration-200">
+            <h3 class="font-semibold text-lg text-gray-900">{item.title}</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed text-sm">{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
