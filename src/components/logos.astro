@@ -1,14 +1,11 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import Sectionhead from "@components/sectionhead.astro";
 import { getCollection } from "astro:content";
 
-// Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
-
 ---
 
 <Sectionhead>
@@ -32,5 +29,5 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     <Icon class="h-8 md:h-12" name="simple-icons:snyk" />
     <Icon class="h-8 md:h-12" name="simple-icons:hasura" />
     <Icon class="h-8 md:h-12" name="simple-icons:snowflake" />
-  </div> 
+  </div>
 </div>
